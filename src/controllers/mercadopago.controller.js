@@ -25,7 +25,7 @@ export const CrearSuscripcion = async (req, res) => {
           transaction_amount: Number(monto),
           currency_id: "PEN",
         },
-        payer_email: '',
+        payer_email: email,
         back_url: BACK_URL,
         status: "pending",
         external_reference: id_suscripcion_id_plan,
